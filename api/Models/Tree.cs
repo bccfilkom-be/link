@@ -26,5 +26,6 @@ namespace api.Models
         public string? TreeImageUri { get; set; }
         public User? User { get; set; }
         public ICollection<Link> Links { get; set; } = new List<Link>();
+        public ICollection<LinktreeAccess> LinktreeAccesses { get; set; } = new List<LinktreeAccess>();
     }
 }

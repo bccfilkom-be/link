@@ -17,5 +17,6 @@ namespace api.Models
         public string? Device { get; set; }
         public string? PhotoProfileUri { get; set; }
         public ICollection<Tree> Trees { get; set; } = new List<Tree>();
+        public ICollection<LinktreeAccess> LinktreeAccesses { get; set; } = new List<LinktreeAccess>();
     }
 }
