@@ -25,5 +25,6 @@ namespace api.Models
         public Visibility Visibility { get; set; } = Visibility.Public;
         public string? TreeImageUri { get; set; }
         public User? User { get; set; }
+        public ICollection<Link> Links { get; set; } = new List<Link>();
     }
 }
