@@ -16,6 +16,6 @@ namespace api.Models
         public string? RefreshToken { get; set; }
         public string? Device { get; set; }
         public string? PhotoProfileUri { get; set; }
-
+        public ICollection<Tree> Trees { get; set; } = new List<Tree>();
     }
 }
